@@ -1,0 +1,18 @@
+.scrollspySite {
+  position: relative;
+  overflow: auto;
+  height: 340px;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/* icones de redes sociais */
+.redes-sociais{
+  color: #aa0a2a;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.redes-sociais:hover{
+  color: #aa0a2a;
+}

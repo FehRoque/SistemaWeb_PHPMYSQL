@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../node_modules/bootstrap/compiler/bootstrap.css">
+    <link href="../CSS/style/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    <title>Churras</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container">
+            <a class="navbar-brand h1 mb-0" href="#"> Churras </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSite">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a id="Cima"> </a>
+                        <a class="nav-link" href="../../index.php">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cardapio.html" target="_self"> Cardápio </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../php/views/reserva.php"> Reservas </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Sobre Nós.html"> Sobre nós </a>
+                    </li>
+                </ul>
+                <button onclick="entrar()" class="btn btn-danger my-2 my-sm-0 ml-3" type="submit">
+                    <a tabindex="0" role="button" href="../../php/views/entrar.php"
+                        style="color: aliceblue;">Entrar</a></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mt-5">
+                <h1 class="display-3"> CARDÁPIO </h1>
+                <p> Confira as opções que temos em nosso cardápio!!!</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-center mt-5">
+                <h1 class="display-3" id="  
+                Carnes"> Confira nossos pratos </h1>
+            </div>
+        </div>
+
+        <div class="row mb-5 mt-5">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title"> Churrasco </h4>
+                        <h6 class="card-subtitle mb-2 text-muted"> Picanha </h6>
+
+                        <p class="card-text"> É um corte de carne bovina tipico do Brasil. </p>
+
+                        <img src="img/Cardapio Imagens/picanha.jpg" class="card" style="width: 300px; height: 200px;">
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal"> Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title"> Churrasco </h4>
+                    <h6 class="card-subtitle mb-2 text-muted"> Filé Mignon </h6>
+
+                    <p class="card-text"> É a parte mais tenra da ponta do filé.</p>
+                    <img src="img/Cardapio Imagens/filemignon.jpg" class="card" style="width: 300px; height: 200px;">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal2"> Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card ml-3">
+                <div class="card-body">
+                    <h4 class="card-title"> Churrasco </h4>
+                    <h6 class="card-subtitle mb-2 text-muted"> Ancho </h6>
+
+                    <p class="card-text"> Origem Argentina e é um corte muito saboroso.</p>
+                    <img src="img/Cardapio Imagens/ancho.jpg" class="card" style="width: 300px; height: 200px;">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal3"> Saiba mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5 mt-5">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title"> Churrasco </h4>
+                        <h6 class="card-subtitle mb-2 text-muted"> Fraldinha </h6>
+
+                        <p class="card-text">Também chamada de bife do vazio.</p>
+
+                        <img src="img/Cardapio Imagens/fraldinha.jpg" class="card" style="width: 300px; height: 200px;">
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal4"> Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title"> Churrasco </h4>
+                    <h6 class="card-subtitle mb-2 text-muted"> Costela Premium </h6>
+
+                    <p class="card-text"> Entre a segunda e sexta Costela do boi.</p>
+                    <img src="img/Cardapio Imagens/costelapremium.jpg" class="card"
+                        style="width: 300px; height: 200px;">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal5"> Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card ml-3">
+                <div class="card-body">
+                    <h4 class="card-title"> Churrasco </h4>
+                    <h6 class="card-subtitle mb-2 text-muted"> Alcatra </h6>
+
+                    <p class="card-text"> Localizada entre o lombo e a coxa do boi.</p>
+                    <img src="img/Cardapio Imagens/alcatra.jpg" class="card" style="width: 300px; height: 200px;">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal6"> Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5 mt-5">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title"> Churrasco </h4>
+                        <h6 class="card-subtitle mb-2 text-muted"> Cupim </h6>
+
+                        <p class="card-text"> É uma carne macia entremeada de gordura.</p>
+
+                        <img src="img/Cardapio Imagens/cupim.jpg" class="card" style="width: 300px; height: 200px;">
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal7"> Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title"> Churrasco </h4>
+                    <h6 class="card-subtitle mb-2 text-muted"> Costelão </h6>
+
+                    <p class="card-text"> É a parte de cima do boi junto ao dorso.</p>
+                    <img src="img/Cardapio Imagens/costelão.jpg" class="card" style="width: 300px; height: 200px;">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal8"> Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card ml-3">
+                <div class="card-body">
+                    <h4 class="card-title"> Churrasco </h4>
+                    <h6 class="card-subtitle mb-2 text-muted"> Maminha </h6>
+
+                    <p class="card-text"> Corte subprimal do lombo inferior.</p>
+                    <img src="img/Cardapio Imagens/maminha.jpg" class="card" style="width: 300px; height: 200px;">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal9"> Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-center mt-5">
+                <h1 class="display-3" id="Sobre"> Confira nossas sobremesas </h1>
+            </div>
+        </div>
+
+        <div class="row mb-5 mt-5">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title"> Sobremesa </h4>
+                        <h6 class="card-subtitle mb-2 text-muted"> Petit Gateau </h6>
+
+                        <img src="img/Cardapio Imagens/petit.jpg" class="card" style="width: 300px; height: 200px;">
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#siteModalS1"> Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title"> Sobremesa </h4>
+                    <h6 class="card-subtitle mb-2 text-muted"> Cocada Tabuleiro </h6>
+
+                    <img src="img/Cardapio Imagens/cocada.jpeg" class="card" style="width: 300px; height: 200px;">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModalS2"> Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card ml-3">
+                <div class="card-body">
+                    <h4 class="card-title"> Sobremesa </h4>
+                    <h6 class="card-subtitle mb-2 text-muted"> Torta Holandesa de Alpino </h6>
+
+                    <img src="img/Cardapio Imagens/torta_holandesa_pedaco.jpg" class="card"
+                        style="width: 300px; height: 200px;">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModalS3"> Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5 mt-5">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title"> Sobremesa </h4>
+                        <h6 class="card-subtitle mb-2 text-muted"> Mousse de Chocolate </h6>
+
+                        <img src="img/Cardapio Imagens/mousse.jpg" class="card" style="width: 300px; height: 200px;">
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#siteModalS4"> Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title"> Sobremesa </h4>
+                    <h6 class="card-subtitle mb-2 text-muted"> Brownie </h6>
+
+                    <img src="img/Cardapio Imagens/brownie.jpg" class="card" style="width: 300px; height: 200px;">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModalS5"> Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card ml-3">
+                <div class="card-body">
+                    <h4 class="card-title"> Sobremesa </h4>
+                    <h6 class="card-subtitle mb-2 text-muted"> Petit Gateau de Doce de Leite </h6>
+
+                    <img src="img/Cardapio Imagens/Petit-Gateau-de-Doce-de-Leite.jpg" class="card"
+                        style="width: 300px; height: 200px;">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModalS6"> Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5 mt-5">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title"> Sobremesa </h4>
+                        <h6 class="card-subtitle mb-2 text-muted"> Tiramisu </h6>
+
+                        <img src="img/Cardapio Imagens/tiramisu-500x375.jpg" class="card"
+                            style="width: 300px; height: 200px;">
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#siteModalS7"> Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title"> Sobremesa </h4>
+                    <h6 class="card-subtitle mb-2 text-muted"> Pudim </h6>
+
+                    <img src="img/Cardapio Imagens/pudim.jpg" class="card" style="width: 300px; height: 200px;">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModalS8"> Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="card ml-3">
+                <div class="card-body">
+                    <h4 class="card-title"> Sobremesa </h4>
+                    <h6 class="card-subtitle mb-2 text-muted"> Tarte Tatin </h6>
+
+                    <img src="img/Cardapio Imagens/tarte.jpg" class="card" style="width: 300px; height: 200px;">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModalS9"> Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-center mt-5">
+                <h1 class="display-3" id="Sobre"> Nosso Rodízio </h1>
+            </div>
+        </div>
+
+        <div class="row mb-5 mt-5">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/Lugar Imagens/rodizio.jpg" class="card" style="width: 300px; height: 200px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/Lugar Imagens/rodizio1.jpg" class="card" style="width: 300px; height: 200px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/Lugar Imagens/download.jpg" class="card" style="width: 300px; height: 200px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 text-center mt-5">
+                <h3>
+                    Conheça o nosso rodízio
+                </h3>
+            </div>
+
+            <div class="col-15 text-left mt-3">
+                <p>O nosso rodízio é uma ótima opção para almoços familiares, encontros de negócios, confraternizações e
+                    eventos sociais,
+                    e a razão é simples: além do elevado padrão das carnes servidas,
+                    nosso buffet conta com uma variedade de pratos para
+                    todos os gostos.
+                </p>
+            </div>
+
+            <div class="col-18 text-left mt-2">
+                <h5>
+                    - Segunda à Sexta: R$ 85,00 / Criança até 10 anos: R$ 40,00.
+                </h5>
+
+            </div>
+
+            <div class="col-18 text-left mt-2">
+                <h5>
+                    - Finais de Semana e Feriados: R$ 100,00 / Criança até 10 anos: R$ 50,00.
+                </h5>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <hr>
+                </div>
+
+                <div class="col-sm-4">
+                    <h4> Horários de Funcionamento </h4>
+                    <p> Segunda a Quinta: 11h às 15h | 18h às 23h</p>
+                    <p> Sexta: 11h às 15h | 18h às 00h</p>
+                    <p> Sábado: 11h às 16h | 18h às 00h</p>
+                    <p> Domingo: 11h às 16h | 18h às 23h</p>
+                    <h4> Nossa Localização </h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.766202820163!2d-46.7746138859042!3d-23.612716384657386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5443d07c0669%3A0xb8422f47f59e5cf8!2sSenac%20Tabo%C3%A3o%20da%20Serra!5e0!3m2!1spt-BR!2sbr!4v1596647976423!5m2!1spt-BR!2sbr"
+                        width="325" height="100" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+
+                    </p>
+                </div>
+
+                <div class="col-sm-4">
+                    <h4> Menu </h4>
+                    <div class="list-group text-center">
+                        <a href="../../index.php" class="list-group-item  list-gorup-item-action" style="color: red;">
+                            Início
+                        </a>
+                        <a href="Sobre Nós.html" class="list-group-item list-gorup-item-action" style="color: red;">
+                            Sobre nós </a>
+                        <a href="../../php/views/reserva.php" class="list-group-item list-gorup-item-action" style="color: red;">
+                            Reservas </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h4 id="Cont">Contatos</h4>
+                    <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+                        <a href="https://www.instagram.com" target="_blank"><span
+                                class="fab fa-instagram redes-sociais"></span></a>
+                        <a href="https://www.facebook.com" target="_blank"><span
+                                class="fab fa-facebook redes-sociais"></span></a>
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0"> Site inteiramente dedicado ao Projeto Integrador da instituição Senac Taboão da
+                            Serra.
+                        </p>
+                        <footer class="blockquote-footer">
+                            <p>Luan Pereira Santos</p>
+                            <p>Felipe Ramos Roque</p>
+                            <b>© 2020 Churras, Inc. All Rights Reserved.</b>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MODAL -->
+        <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Churras </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span> &times; </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-14">
+                                    <h5> Picanha</h5>
+                                    <p> A picanha é um corte tipicamente brasileiro, muito saboroso e macio. Um dos
+                                        cortes mais vendidos em nossas unidades.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Fechar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="siteModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Churras </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span> &times; </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-14">
+                                    <h5> Filé Mignon</h5>
+                                    <p> O corte mais macio da carne bovina, com baixo teor de gordura, temperado e
+                                        assado com perfeição.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Fechar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="siteModal3" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Churras </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span> &times; </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-14">
+                                    <h5> Ancho</h5>
+                                    <p> Os cortes de bife ancho são assados lentamente, garantindo uma carne macia e
+                                        suculenta com sabor único.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Fechar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="siteModal4" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Churras </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span> &times; </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-14">
+                                    <h5> Fraldinha</h5>
+                                    <p> Corte com paladar diferenciado, disputa com a picanha o primeiro lugar nas
+                                        vendas no Fogo de Chão.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Fechar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="siteModal5" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Churras </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span> &times; </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-14">
+                                    <h5> Costela Premium</h5>
+                                    <p> Este corte clássico é preparado de forma tradicional, proporcionando um sabor
+                                        autêntico.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Fechar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="siteModal6" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Churras </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span> &times; </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-14">
+                                    <h5> Alcatra </h5>
+                                    <p> É um dos cortes mais versáteis do boi. Possui fibras macias o que a deixa
+                                        extremamente saborosa.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Fechar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="siteModal7" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Churras </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span> &times; </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-14">
+                                    <h5> Cupim </h5>
+                                    <p> Caracterizado pela gordura entremeada nas fibras, este corte é lentamente assado
+                                        e desmancha na boca, o CUPIM está situado logo atrás do pescoço de bovinos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Fechar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="siteModal8" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Churras </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span> &times; </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-14">
+                                    <h5> Costelão</h5>
+                                    <p> Este corte é assado lentamente por até 7 horas até alcançar o ponto perfeito, A
+                                        Costela Ponta de Agulha ou Minga sai da parte inferior da caixa torácica, é
+                                        formada por ossos mais finos e muitas cartilagens, muito entremeada
+                                        de gordura e carnes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Fechar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="siteModal9" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Churras </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span> &times; </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-14">
+                                    <h5> Maminha</h5>
+                                    <p> Muito procurada para churrascos, a maminha é proveniente da peça completa da
+                                        alcatra. Fica localizada no fim da peça da alcatra, no traseiro do boi, próxima
+                                        à ponta da agulha. Em média, essa peça de carne pesa aproximadamente
+                                        2kg.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Fechar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="siteModalS1" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Churras </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span> &times; </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-14">
+                                    <h5> Petit Gateau </h5>
+                                    <p> Bolo de chocolate quente com sorvete ou açai.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Fechar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="siteModalS2" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Churras </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span> &times; </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-14">
+                                    <h5> Cocada Tabuleiro</h5>
+                                    <p> Doce de coco assado, servido com sorvete de creme.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Fechar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="siteModalS3" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Churras </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span> &times; </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-14">
+                                    <h5> Torta Holandesa de Alpino</h5>
+                                    <p> Biscoito Calypso, licor de cacau, creme e cobertura de chocolate Alpino.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Fechar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="siteModalS4" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Churras </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span> &times; </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-14">
+                                    <h5> Mousse de Chocolate</h5>
+                                    <p> Uma sobremesa clássica e impecável para os apaixonados por chocolate que desejam
+                                        a perfeição em uma taça.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Fechar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="siteModalS5" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Churras </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span> &times; </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-14">
+                                    <h5> Brownie</h5>
+                                    <p> Bolo de chocolate molhadinho com pedacinhos de nozes servido quente com sorvete
+                                        de creme e uma intensa e deliciosa ganache.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Fechar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="siteModalS6" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Churras </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span> &times; </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-14">
+                                    <h5> Petit Gateau de Doce de Leite</h5>
+                                    <p> Bolinho cremoso feito com o delicioso doce de leite, servido com sorvete de
+                                        creme e um coulis de frutas vermelhas, irresistível!.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Fechar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="siteModalS7" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Churras </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span> &times; </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-14">
+                                    <h5> Tiramisu</h5>
+                                    <p> Sobremesa clássica Italiana feita com mousse de queijo cremoso, um toque de
+                                        vinho e café e com o delicioso chocolate em pó.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Fechar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="siteModalS8" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Churras </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span> &times; </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-14">
+                                    <h5> Pudim </h5>
+                                    <p> Delicioso pudim de leite com calda de ameixa.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Fechar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="siteModalS9" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Churras </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span> &times; </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-14">
+                                    <h5> Tarte Tatin</h5>
+                                    <p> Torta de maçã quente com sorvete de creme.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"> Fechar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
